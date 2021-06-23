@@ -1,0 +1,25 @@
+---> Z - algorithm
+ 
+
+int main(){
+      string temp = pattern + "#" + txt;
+      int z[temp.size()] = {0};    
+        zalgorithm(z, temp); 
+        --> print the array//;
+}
+
+void zalgorithm(int z[], string temp){
+          int l = 0, r = 0; 
+         for(int i = 0; i < temp.size(); i++){
+              if(l <= r){
+                   z[i] = min(r - i + 1, z[i - 1]);
+              }
+              while(i + z[i] < n && s[z[i]] == s[i + z[i]]){
+       	z[i]++;
+              }
+
+              if(i + z[i] - 1 > r){
+                     l = i; r = i + z[i] - 1;
+             }  
+       }
+}
