@@ -112,7 +112,7 @@ void solve(){
 	loop(i, 1, n) cin >> arr[i];
 	build(1, 1, n);
 	while(q--){
-		cin >> code 
+		cin >> code;
 		if(code == 1){
 			cin >> l >> r;
 			cout << query(1, 1, n, l, r) << endl;
